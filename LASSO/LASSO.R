@@ -1,3 +1,4 @@
+
 # load packages
 library(glmnet)
 library(pROC)
@@ -34,7 +35,7 @@ lasso.probs <- predict(lasso.fit.best, newx=x, type="response")
 roc <- roc(y, lasso.probs)
 auc <- auc(roc)
 
-# 输出ROC曲线和AUC值
+# Visualize the results of the ROC and AUC
 plot(roc,col="red",
      legacy.axes = TRUE,
      smooth =TRUE,
@@ -42,7 +43,4 @@ plot(roc,col="red",
      print.auc=T,
      thresholds="best", # based on youden index
      print.thres="best") # show the optimum threshold
-
-
-
 
