@@ -1,4 +1,4 @@
-# M-AI (Metabolomics-Artificial Intelligence)
+# Metabolomics-Artificial Intelligence (M-AI)
 We hope to integrate the application of AI in metabolomics and further study the biological significance.
 
 ## LASSO for metabolomics
