@@ -32,8 +32,8 @@ best.lambda <- cv.fit$lambda.min
 lasso.fit.best <- glmnet(x, y, family="binomial", alpha=1, lambda=best.lambda)
 ```
 
-### 1 two-category data. family="binomial".[./LASSO.R]
-### 2 multi-grouping data. family="multinomial".[./LASSO_M.R]
+### 1 two-category data. family="binomial". [./LASSO.R]
+### 2 multi-grouping data. family="multinomial". [./LASSO_M.R]
 
 ## output ROC
 ![ROC](Rplot.png#pic_center)
