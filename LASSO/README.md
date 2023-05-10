@@ -12,12 +12,12 @@ install.packages('pROC')
 ```
 
 
-## data structure
+## Data structure
 
 ![data](input.png#pic_center)
 
 
-## grouping parameter setting
+## Grouping parameter setting
 
 In this section, we need to set the parameters of the modeling process in the program to make our model conform to our group analysis.
 ```R
@@ -32,8 +32,8 @@ best.lambda <- cv.fit$lambda.min
 lasso.fit.best <- glmnet(x, y, family="binomial", alpha=1, lambda=best.lambda)
 ```
 
-### 1 two-category data. family="binomial". [LASSO.R](LASSO.R)
-### 2 multi-grouping data. family="multinomial". [LASSO_M.R](LASSO_M.R)
+### 1 two-category data. family="binomial".[./LASSO.R]
+### 2 multi-grouping data. family="multinomial".[./LASSO_M.R]
 
-## output ROC
+## Output ROC
 ![ROC](Rplot.png#pic_center)
